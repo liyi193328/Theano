@@ -43,7 +43,7 @@ if PY3:
 
     def decode_iter(itr):
         for x in itr:
-            yield x.decode()
+            yield x.decode('gbk')
 else:
     from six import get_unbound_function
     from operator import div as operator_div
